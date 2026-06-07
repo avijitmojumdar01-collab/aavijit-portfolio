@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avijit Mojumdar | 3D Artist Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0a0f1f;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%, rgba(0,255,255,.15), transparent 30%),
+radial-gradient(circle at 80% 20%, rgba(138,43,226,.15), transparent 30%),
+radial-gradient(circle at 50% 80%, rgba(0,255,255,.1), transparent 40%);
+z-index:-1;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+position:fixed;
+width:100%;
+top:0;
+z-index:999;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#00ffff;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:120px 10%;
+}
+
+.hero-box{
+max-width:1000px;
+background:rgba(255,255,255,.08);
+padding:50px;
+border-radius:25px;
+backdrop-filter:blur(20px);
+box-shadow:0 20px 50px rgba(0,0,0,.5);
+text-align:center;
+}
+
+.profile{
+width:180px;
+height:180px;
+margin:auto;
+border-radius:50%;
+overflow:hidden;
+border:5px solid #00ffff;
+box-shadow:0 0 30px #00ffff;
+}
+
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+h1{
+font-size:3rem;
+margin-top:20px;
+}
+
+.highlight{
+color:#00ffff;
+}
+
+.subtitle{
+color:#cccccc;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:linear-gradient(45deg,#00ffff,#8a2be2);
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.contact-box{
+max-width:800px;
+margin:auto;
+background:rgba(255,255,255,.08);
+padding:40px;
+border-radius:20px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#050816;
+}
+
+@media(max-width:768px){
+h1{
+font-size:2rem;
+}
+
+nav ul{
+display:none;
+}
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+<div class="logo">AM</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="about">
+
+<div class="hero-box">
+
+<div class="profile">
+<img src="profile.jpg" alt="Avijit Mojumdar">
+</div>
+
+<h1>Avijit <span class="highlight">Mojumdar</span></h1>
+
+<p class="subtitle">
+3D Artist • Graphic Designer • Hard Surface Modeler
+</p>
+
+<a href="https://www.artstation.com/avijitmojumdar2" target="_blank" class="btn">
+View 3D Portfolio
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+<p>
+Hello, Thanks you for your Time looking my Profile.
+My name is Avijit. I am a 3D Artist & Graphic Designer.
+I am mostly a self-Taught 3D hard surface artist.
+I am very passionate and have a strong sense of details.
+</p>
+
+<br>
+
+<p>
+I have knowledge of Adobe Photoshop, Autodesk Maya,
+Canva and Substance Painter. Gaming was my childhood
+passion and inspired me to enter the world of digital multimedia.
+I am not afraid of criticism and I enjoy continuously learning
+new techniques to improve my workflow and skills.
+I always do my work honestly and professionally.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>3D Modeling</h3>
+<p>Hard Surface Modeling, Asset Creation, Product Modeling</p>
+</div>
+
+<div class="card">
+<h3>Texturing</h3>
+<p>Substance Painter, Materials, PBR Workflow</p>
+</div>
+
+<div class="card">
+<h3>Graphic Design</h3>
+<p>Social Media Design, Branding, Advertising</p>
+</div>
+
+<div class="card">
+<h3>Software</h3>
+<p>Maya, Photoshop, Canva, Substance Painter</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title">Work Experience</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Freelance 3D Artist</h3>
+<p>2025 - Present</p>
+</div>
+
+<div class="card">
+<h3>Render Bazaar</h3>
+<p>Junior 3D Artist</p>
+<p>June 2025 - October 2025</p>
+</div>
+
+<div class="card">
+<h3>Glimmora International</h3>
+<p>Junior 3D Artist</p>
+<p>March 2026 - Present</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact-box">
+
+<p><strong>Name:</strong> Avijit Mojumdar</p>
+<br>
+
+<p><strong>Phone:</strong> +91 9064684516</p>
+<br>
+
+<p><strong>Email:</strong> avijitmojumdar01@gmail.com</p>
+<br>
+
+<p><strong>Location:</strong> Kolkata, India</p>
+<br>
+
+<p>
+<strong>Portfolio:</strong>
+<a href="https://www.artstation.com/avijitmojumdar2" style="color:#00ffff;">
+ArtStation Portfolio
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Avijit Mojumdar | 3D Artist Portfolio
+</footer>
+
+</body>
+</html>
